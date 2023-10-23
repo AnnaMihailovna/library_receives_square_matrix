@@ -1,2 +1,2 @@
-# library_receives_square_matrix
+## library_receives_square_matrix
 Python-библиотека, которая осуществляет получение квадратной матрицы (NxN) с удалённого сервера и возвращает её пользователю в виде List[int]. 
