@@ -19,8 +19,7 @@ SOURCE_URL = 'https://raw.githubusercontent.com/avito-tech/' \
              'python-trainee-assignment/main/matrix.txt'
 
 def test_prepare_matrix():
-    with open("./test_matrix.txt") as file:
-        print(prepare_matrix(file.read()))
+    with open("test_matrix.txt") as file:
         assert prepare_matrix(file.read()) == PREPARED_MATRIX
     assert prepare_matrix("") == []
     assert prepare_matrix("+----+\n| 1 | 3 |\n+_____+") == []
@@ -32,7 +31,3 @@ def test_traverse_matrix():
 
 def test_get_matrix():
     assert asyncio.run(get_matrix(SOURCE_URL)) == TRAVERSAL
-
-# test_prepare_matrix()
-# test_traverse_matrix()
-# test_get_matrix()
